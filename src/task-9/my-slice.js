@@ -1,4 +1,4 @@
-function mySlice(arr, start, end = arr.length) {
+function mySlice(arr, start = 0, end = arr.length) {
   const result = []
   for (let i = start; i < end; i++) {
     result.push(arr[i])
