@@ -1,0 +1,18 @@
+function myFilter(array, callback) {
+  const result = []
+  for (let item of array) {
+    if (callback(item)) {
+      result.push(item)
+    }
+  }
+  return result
+}
+
+const numbers = [1, 2, 3, 4, 5];
+
+const evenNumbers = myFilter(numbers, num => num % 2 === 0)
+console.log(evenNumbers);
+
+// Фильтруем числа больше 3
+const greaterThanThree = myFilter(numbers, num => num > 3);
+console.log(greaterThanThree);
