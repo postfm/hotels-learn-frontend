@@ -10,9 +10,13 @@ function createLogger() {
   }
 }
 
+// Тестируем
+const greetings = 'Hi'
+const farewell = 'Bye'
+
 const logger = createLogger()
 
-logger.log('Hi')
-logger.log('Buy')
+logger.log(greetings)
+logger.log(farewell)
 
 logger.getLogs()
